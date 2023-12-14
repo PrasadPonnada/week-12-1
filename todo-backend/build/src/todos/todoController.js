@@ -22,6 +22,10 @@ exports.TodoController = void 0;
 const tsoa_1 = require("tsoa");
 const todoService_1 = require("./todoService");
 let TodoController = class TodoController extends tsoa_1.Controller {
+    /**
+     * To Retrive the ToDO Item based on TodoId
+     * This Endpoint is used to get the todo item based on given todo id
+    */
     getTodo(todoId) {
         return __awaiter(this, void 0, void 0, function* () {
             const service = new todoService_1.TodoService();
